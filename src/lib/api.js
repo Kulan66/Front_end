@@ -28,7 +28,7 @@ export const api = createApi({
       },
     }),
     getHotelsForSearchQuery: builder.query({
-      query: ({ query }) => `https://back-end-ten-sepia.vercel.app/hotels/search/retrieve?query=${query}`,
+      query: ({ query }) => `hotels/search/retrieve?query=${query}`,
     }),
     getHotelById: builder.query({
       query: (id) => `hotels/${id}`,
